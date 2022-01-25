@@ -1,0 +1,85 @@
+// $borderColor: #000;
+$addColor: #468FEA;
+$removeColor: #B80202;
+$tabletScreen: 768px;
+
+// form btn
+.form-btn{
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 0;
+    &.top-btn{
+        margin-bottom: 20px;
+    }
+    &.add{
+        background: $addColor;
+    }
+    &.remove{
+        background: $removeColor;
+    }
+}
+
+.cu-add-form-wrap{
+    margin-bottom: 20px;
+    input{
+        &[type=submit]{
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 0;
+            background: $addColor;
+        }
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+}
+
+// table
+.cu-table{
+    width: 60%;
+    border: 1px solid $addColor;
+}
+
+.cu-table-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+    &.desc-row{
+        background: $addColor;
+        color: #fff;
+    }
+    &.table-row:hover{
+        background: #e6e4e4;
+    }
+    span{
+        padding: 0 20px;
+    }
+}
+
+// update popup
+.cu-update-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px 20px;
+    input, button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: $tabletScreen){
+    .cu-table {
+        overflow-x: scroll;
+        width: 95%;
+    }
+
+    .cu-table-item{
+        width: 700px;
+    }
+}

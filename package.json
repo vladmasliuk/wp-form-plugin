@@ -1,0 +1,23 @@
+{
+  "name": "mta",
+  "version": "1.0.0",
+  "description": "mta project",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vladmasliuk@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^19.2.3",
+    "axios": "^0.25.0"
+  }
+}

@@ -1,0 +1,43 @@
+.cu-form-container {
+  padding: 50px 0;
+  background: #1d1d1d;
+}
+
+.cu-form-wrap {
+  max-width: 1550px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.cu-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cu-form form label {
+  color: #fff;
+}
+
+.cu-form form input:focus {
+  outline: 0;
+}
+
+.cu-form form input[type=text],
+.cu-form form input[type=email] {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  margin-bottom: 20px;
+  border-radius: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.cu-form form input[type=submit] {
+  background: #fff;
+  color: #1d1d1d;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0;
+}
